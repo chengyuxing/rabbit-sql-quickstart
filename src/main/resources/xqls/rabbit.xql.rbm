@@ -1,0 +1,11 @@
+# Rabbit-SQL-Plugin - XQL mapper generate configuration - DO NOT MODIFY
+
+baki: null
+methods:
+  findRabbit:
+    enable: true
+    paramType: Map
+    returnGenericType: DataRow
+    returnType: <T>
+    sqlType: query
+packageName: org.example.mappers
