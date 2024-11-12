@@ -1,7 +1,7 @@
 /*
  * Created by IntelliJ IDEA Rabbit SQL plugin.
  * User: chengyuxing
- * Update: 2024-11-12 21:38:05
+ * Update: 2024-11-13 01:07:15
  */
 
 package org.example.mappers;

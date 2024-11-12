@@ -51,13 +51,14 @@ public class App implements CommandLineRunner {
     @GetMapping("/rabbits")
     List<Rabbit> rabbits() {
         return baki.query(Rabbit.class)
-                .where(w -> w.gt(Rabbit::getId, 3).lt(Rabbit::getId, 8))
+                .where(w -> w.gt(Rabbit::getId, 3)
+                        .lt(Rabbit::getId, 8))
                 .orderBy(o -> o.desc(Rabbit::getAge))
                 .toList();
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         baki.of("drop table if exists rabbit").execute();
 
         baki.of("&initdb.createTable").execute();
