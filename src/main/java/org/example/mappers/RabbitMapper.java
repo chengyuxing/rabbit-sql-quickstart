@@ -1,7 +1,7 @@
 /*
- * Created by IntelliJ IDEA Rabbit-SQL plugin.
+ * Created by IntelliJ IDEA Rabbit SQL plugin.
  * User: chengyuxing
- * Update: 2024-11-12 21:09:18
+ * Update: 2024-11-12 21:38:05
  */
 
 package org.example.mappers;
@@ -20,18 +20,18 @@ import java.util.stream.Stream;
 
 import org.example.entity.Rabbit;
 
-// Rabbit-SQL plugin - Your imports  //CODE-BEGIN:imports
+// Rabbit SQL plugin - Your imports  //CODE-BEGIN:imports
 
-// Rabbit-SQL plugin - End of your imports  //CODE-END:imports
+// Rabbit SQL plugin - End of your imports  //CODE-END:imports
 
 /**
 * rabbit-sql quick start demo.
 */
 @XQLMapper("rabbit")
 public interface RabbitMapper {
-    // Rabbit-SQL plugin - Your methods  //CODE-BEGIN:methods
+    // Rabbit SQL plugin - Your methods  //CODE-BEGIN:methods
 
-    // Rabbit-SQL plugin - End of your methods  //CODE-END:methods
+    // Rabbit SQL plugin - End of your methods  //CODE-END:methods
 
     /**
      * Get a rabbit to help you!
@@ -42,7 +42,6 @@ public interface RabbitMapper {
     @XQL(type = SqlStatementType.query)
     Rabbit findRabbit(
             @Arg("id") Object id
-
     );
 
 }
