@@ -1,7 +1,7 @@
 /*
  * Created by IntelliJ IDEA Rabbit-SQL plugin.
  * User: chengyuxing
- * Update: 2024-10-10 21:42:01
+ * Update: 2024-11-12 21:09:18
  */
 
 package org.example.mappers;
@@ -17,6 +17,8 @@ import java.util.Set;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Stream;
+
+import org.example.entity.Rabbit;
 
 // Rabbit-SQL plugin - Your imports  //CODE-BEGIN:imports
 
@@ -34,9 +36,13 @@ public interface RabbitMapper {
     /**
      * Get a rabbit to help you!
      *
-     * @return DataRow
+     * @param id id
+     * @return Rabbit
      */
-    @XQL(type = Type.query)
-    DataRow findRabbit();
+    @XQL(type = SqlStatementType.query)
+    Rabbit findRabbit(
+            @Arg("id") Object id
+
+    );
 
 }

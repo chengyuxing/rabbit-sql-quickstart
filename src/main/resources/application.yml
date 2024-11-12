@@ -1,3 +1,8 @@
 spring:
   datasource:
     url: jdbc:sqlite://${user.dir}/rabbit.db
+
+logging:
+  level:
+    root: info
+    com.github.chengyuxing.sql: debug

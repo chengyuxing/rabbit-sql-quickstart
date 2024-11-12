@@ -4,8 +4,10 @@ baki: null
 methods:
   findRabbit:
     enable: true
-    paramType: Map
-    returnGenericType: DataRow
+    paramType: '@Arg'
+    returnGenericType: org.example.entity.Rabbit
     returnType: <T>
     sqlType: query
 packageName: org.example.mappers
+pageKey: page
+sizeKey: size

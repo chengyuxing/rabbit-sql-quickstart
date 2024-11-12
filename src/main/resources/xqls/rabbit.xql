@@ -13,5 +13,7 @@
 
 /*[findRabbit]*/
 /*#Get a rabbit to help you!#*/
-select current_timestamp, 'rabbit-sql'
+select birthday, name
+from rabbit
+where id = :id
 ;

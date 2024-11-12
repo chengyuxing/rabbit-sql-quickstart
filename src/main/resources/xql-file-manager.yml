@@ -5,9 +5,8 @@
 # https://github.com/chengyuxing/rabbit-sql#xqlfilemanager
 
 files:
+  initdb: !path [ xqls, initdb.xql ]
   rabbit: xqls/rabbit.xql
-#  foo: !path [ main, a.xql ]
-#  bar: main/b.xql
 
 #constants:
 
@@ -16,8 +15,6 @@ files:
 #charset: UTF-8
 
 #pipes:
-
-# The following properties work for plugin action (Execute Dynamic sql).
 
 #named-param-prefix: ':'
 
