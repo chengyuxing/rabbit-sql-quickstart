@@ -1,0 +1,13 @@
+# Rabbit SQL plugin - XQL mapper generate configuration - DO NOT MODIFY
+
+baki: null
+methods:
+  dynamicRabbit:
+    enable: true
+    paramType: '@Arg'
+    returnGenericType: DataRow
+    returnType: List<T>
+    sqlType: query
+packageName: org.example.mappers
+pageKey: page
+sizeKey: size

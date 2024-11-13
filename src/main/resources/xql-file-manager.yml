@@ -3,6 +3,7 @@
 files:
   initdb: !path [ xqls, initdb.xql ]
   rabbit: xqls/rabbit.xql
+  dynamic: http://127.0.0.1:8080/share/cyx.xql?token=${env.TOKEN}
 
 #constants:
 
