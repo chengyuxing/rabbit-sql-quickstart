@@ -54,6 +54,7 @@ public class App implements CommandLineRunner {
                 .where(w -> w.gt(Rabbit::getId, 3)
                         .lt(Rabbit::getId, 8))
                 .orderBy(o -> o.desc(Rabbit::getAge))
+                .deselect(List.of(Rabbit::getId))
                 .toList();
     }
 
